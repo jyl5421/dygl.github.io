@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>影视记录管理系统</title>
+		<link rel="stylesheet" href="5.1.css" type="text/css">
+		<script type="text/javascript" src="5.1.js"></script>
+	</head>
+	<body>
+		<div id="main">
+			<p style="font-size: 50px; text-align: center;">影视记录管理系统</p>
+			<table id="table1">
+				<col width="100"></col>
+				<col width="130"></col>
+				<col width="130"></col>
+				<col width="130"></col>
+				<col width="200"></col>
+				<tr>
+					<th>海报</th>
+					<th>影视名称</th>
+					<th>影视类别</th>
+					<th>上映时间</th>
+					<th>影视热评</th>
+					<th>删除/修改</th>
+				</tr>
+				<tr>
+					<td><img src="1.png" width="150px"/></td>
+					<td>JOJO的奇妙冒险 石之海</td>
+					<td>漫画改/热血/奇幻/战斗</td>
+					<td>2022年9月1日Part2开播 </td>
+					<td>世界上只有两类人，看jojo的和没有看过的</td>
+					<td><button onclick="deleteRow(this)">删除</button>&nbsp;&nbsp;<button onclick="add();deleteRow(this)">修改</button></td>
+				</tr>
+				<tr>
+					<td><img src="2.png" width="150px"/></td>
+					<td>路人超能100 第三季</td>
+					<td>漫画改/热血/奇幻/战斗</td>
+					<td>2022年10月5日开播</td>
+					<td>近几年剧情上最能打动人心的动漫！没有烧脑悬疑，没有超长铺垫，没有谜语人，也没有刻意描绘，最纯朴也最能让人产生共鸣，这正是最棒的观感！</td>
+					<td><button onclick="deleteRow(this)">删除</button>&nbsp;&nbsp;<button onclick="add();deleteRow(this)">修改</button></td>
+				</tr>
+				<tr>
+					<td><img src="3.png" width="150px"/></td>
+					<td>雾山五行</td>
+					<td>原创/战斗/玄幻/古风</td>
+					<td>2020年7月26日开播</td>
+					<td>这才是真正的中国动漫！</td>
+					<td><button onclick="deleteRow(this)">删除</button>&nbsp;&nbsp;<button onclick="add();deleteRow(this)">修改</button></td>
+				</tr>
+				<tr><td colspan="6" align="center">
+				<button onclick="add()" id="tj">添加</button>
+				</td></tr>
+			</table>
+		</div>
+		<div id="t2">
+			<table id="table2">
+				<col width="70px"></col>
+				<col width="100px"></col>
+				<tr>
+					<td>
+						海报
+					</td>
+					<td>
+						<input type="file" id="海报" name="upload_image" onchange="show()" accept="image/gif, image/jpeg, image/png, image/jpg">
+					</td>
+				</tr>
+				<tr>
+					<td>影视名称</td>
+					<td>
+						<input type="text" id="影视名称"/>
+					</td>
+				</tr>
+				<tr>
+					<td>影视类别</td>
+					<td>
+						<input  type="text" id="影视类别"/>
+					</td>
+				</tr>
+				<tr>
+					<td>上映时间</td>
+					<td><input type="text" id="上映时间"/></td>
+				</tr>
+				<tr>
+					<td>影视热评</td>
+					<td><input type="text" id="影视热评"/></td>
+				</tr>
+				<tr>
+					<td colspan="2"><button onclick="queding()">确定</button></td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,58 @@
+body{
+	font-family: 幼圆,楷体;
+}
+#table1 {
+	border-collapse: collapse;
+	border-width: 1ch;
+	border:none;
+	border-top-style: solid;
+	border-color: #ccc;
+	margin: auto;
+	font-size: 20px;
+}
+#table1 td{
+	padding: 10px;
+	border:none;
+	border-top-style: solid;
+	border-color: #ccc;
+}
+
+#table2{
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 30%;
+	width: 50%;
+	margin: -15% 0 0 -25%;
+	font-size: 22px;
+	width: 500px;
+	height: 500px;
+	background-color: #cccccc;
+	border-radius: 10%;
+}
+#table2 input{
+	border-radius: 10px;
+	background-color: rgb(255, 250, 232);
+	width: 200px;
+	height: 30px;
+}
+#table2 button{
+	border-radius: 10px;
+	width: 80px;
+	height: 40px;
+	font-size: 20px;
+	background-color: antiquewhite;
+	border: 0;
+}
+#t2{
+	display: none;
+}
+#table1 button
+{
+	border: 0;
+	border-radius: 10px;
+	background-color: rgb(242, 251, 255);
+	width: 50px;
+	height: 30px;
+}
